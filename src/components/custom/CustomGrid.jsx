@@ -7,6 +7,8 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import gridImg from "@/assets/imggrid.webp";
+import { testimonials } from "@/data";
+import { InfiniteMovingCards } from "../ui/InfinteMoving";
 
 export function CustomGrid() {
   return (
@@ -52,7 +54,22 @@ const items = [
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    header: (
+      <>
+        <div className="h-[12rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+          />
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="left"
+            speed="slow"
+          />
+        </div>
+      </>
+    ),
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },

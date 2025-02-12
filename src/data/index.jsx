@@ -122,3 +122,27 @@ export const products = [
     thumbnail: project3, // portfolio
   },
 ];
+
+export const testimonials = [
+  {
+    name: "JavaScript",
+  },
+  {
+    name: "TailwindCSS",
+  },
+  {
+    name: "React.JS",
+  },
+  {
+    name: "Next.JS",
+  },
+  {
+    name: "Node.JS",
+  },
+  {
+    name: "Express.JS",
+  },
+  {
+    name: "Framer Motion",
+  },
+];
