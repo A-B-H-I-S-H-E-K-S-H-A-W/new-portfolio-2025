@@ -6,10 +6,7 @@ import { buttonLinks } from "@/data";
 
 export function Hero() {
   return (
-    <div
-      
-      className="-mt-8 min-h-screen w-full rounded-md flex items-center justify-center dark:bg-black-100 antialiased bg-grid-white/[0.02] relative overflow-hidden"
-    >
+    <div className="-mt-8 min-h-screen w-full rounded-md flex items-center justify-center dark:bg-black-100 antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-20 -left-5 md:left-60 md:-top-20"
         fill="purple"
@@ -27,15 +24,13 @@ export function Hero() {
         fill="blue"
       />
 
-      <div id="Home" className="min-h-screen w-full dark:bg-black-150 bg-blue-100  dark:bg-grid-white/[0.1] bg-grid-black/[0.23] relative flex items-center justify-center">
+      <div
+        id="home"
+        className="min-h-screen w-full dark:bg-black-150 bg-blue-100  dark:bg-grid-white/[0.1] bg-grid-black/[0.23] relative flex items-center justify-center"
+      >
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex items-center justify-center max-w-5xl flex-col p-4 mx-auto relative z-10  w-full pt-20 md:pt-0">
-          {/* <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          HELLO! I'm <br /> Abhishek Shaw
-        </h1>
-         */}
-
           <TextGenerateEffect
             words={`Hello I'm Abhishek Shaw, A Full Stack Developer`}
             className={

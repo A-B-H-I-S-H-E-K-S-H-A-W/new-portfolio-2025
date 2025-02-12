@@ -3,6 +3,7 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Link from "next/link";
 import { TextGenerateEffect } from "./TextGenerate";
+import Image from "next/image";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -132,16 +133,20 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-[50rem] relative flex-shrink-0"
     >
       <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
+        href={product?.link}
+        className="block group-hover/product:shadow-2xl"
       >
-        <img
-          src={product.thumbnail}
-          height="600"
-          width="600"
+        <Image
+          src={
+            typeof product.thumbnail === "string"
+              ? product.thumbnail
+              : product.thumbnail.src // Handle imported image case
+          }
+          width={1200}
+          height={1}
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />

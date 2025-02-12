@@ -1,18 +1,24 @@
 import { ChartNoAxesGantt, House, Info } from "lucide-react";
+import project1 from "@/assets/projects1.png"; // arca.io
+import project2 from "@/assets/projects2.png"; // freelancing
+import project3 from "@/assets/projects3.png"; // portfolio
+import project4 from "@/assets/projects4.png"; // job portal
+import project5 from "@/assets/projects5.png"; // librarian
+import project6 from "@/assets/projects6.png"; // scale.io
 
 export const navItems = [
   {
-    name: "Home",
-    link: "#Home",
+    name: "home",
+    link: "/",
     icon: <House size={18} />,
   },
   {
-    name: "About",
+    name: "about",
     link: "#about",
     icon: <Info size={18} />,
   },
   {
-    name: "Projects",
+    name: "projects",
     link: "#projects",
     icon: <ChartNoAxesGantt size={18} />,
   },
@@ -38,96 +44,81 @@ export const buttonLinks = [
 
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Arca.io",
+    link: "",
+    thumbnail: project1, // arca.io
   },
   {
-    title: "Cursor",
+    title: "Job Portal",
     link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    thumbnail: project4, // job portal
   },
   {
-    title: "Rogue",
+    title: "Freelancing Platform",
     link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    thumbnail: project2, // freelancing
   },
 
   {
-    title: "Editorially",
+    title: "Scale.io",
     link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    thumbnail: project6, // scale.io
   },
   {
-    title: "Editrix AI",
+    title: "Freelancing",
     link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    thumbnail: project2, // freelancing
   },
   {
-    title: "Pixel Perfect",
+    title: "Portfolio website",
     link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+    thumbnail: project3, // portfolio
   },
 
   {
-    title: "Algochurn",
+    title: "Librarian",
     link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    thumbnail: project5, // librarian
   },
   {
-    title: "Aceternity UI",
+    title: "Arca",
     link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    thumbnail: project1, // arca.io
   },
   {
-    title: "Tailwind Master Kit",
+    title: "Portfolio Website",
     link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    thumbnail: project3, // portfolio
   },
   {
-    title: "SmartBridge",
+    title: "Freelancing",
     link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    thumbnail: project2, // freelancing
   },
   {
-    title: "Renderwork Studio",
+    title: "Librar.an",
     link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    thumbnail: project5, // librarian
   },
 
   {
-    title: "Creme Digital",
+    title: "Scale",
     link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    thumbnail: project6, // scale.io
   },
   {
-    title: "Golden Bells Academy",
+    title: "Arca.ai",
     link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    thumbnail: project1, // arca.io
   },
   {
-    title: "Invoker Labs",
+    title: "Job Search Website",
     link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    thumbnail: project4, // job portal
   },
   {
-    title: "E Free Invoice",
+    title: "Self-Portfolio Website",
     link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    thumbnail: project3, // portfolio
   },
 ];
