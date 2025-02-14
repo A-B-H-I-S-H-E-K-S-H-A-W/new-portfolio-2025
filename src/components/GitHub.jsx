@@ -23,7 +23,7 @@ export function GitHub() {
 
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
         More Projects on <Cover>GitHub.</Cover>
-        <div>
+        <div className="mt-4">
           <Button
             title={"GitHub Repositories"}
             href={"https://github.com/A-B-H-I-S-H-E-K-S-H-A-W?tab=repositories"}

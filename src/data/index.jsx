@@ -40,15 +40,15 @@ export const buttonLinks = [
     id: 1,
     className:
       "mt-5 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000",
-    title: "Explore More",
-    href: "#about",
+    title: "Download CV",
+    href: "#",
   },
   {
     id: 2,
     className:
       "mt-5 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000",
     title: "LinkedIn Profile",
-    href: "https://github.com/A-B-H-I-S-H-E-K-S-H-A-W",
+    href: "https://www.linkedin.com/in/abhishek-shaw-21783a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     target: "_blank",
   },
 ];

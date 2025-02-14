@@ -6,8 +6,8 @@ const svgToDataUri = require("mini-svg-data-uri");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ["class"],
-    content: [
+  darkMode: ["class"],
+  content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,50 +16,89 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		animation: {
-  			spotlight: 'spotlight 2s ease .75s 1 forwards',
-  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
-  		},
-  		colors: {
-  			black: {
-  				'100': '#000319',
-  				'150': '#000229',
-  				'200': '#00083f',
-  				DEFAULT: '#000'
-  			}
-  		},
-  		keyframes: {
-  			scroll: {
-  				to: {
-  					transform: 'translate(calc(-50% - 0.5rem))'
-  				}
-  			},
-  			shimmer: {
-  				from: {
-  					backgroundPosition: '0 0'
-  				},
-  				to: {
-  					backgroundPosition: '-200% 0'
-  				}
-  			},
-  			spotlight: {
-  				'0%': {
-  					opacity: 0,
-  					transform: 'translate(-72%, -62%) scale(0.5)'
-  				},
-  				'100%': {
-  					opacity: 1,
-  					transform: 'translate(-50%,-40%) scale(1)'
-  				}
-  			}
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      animation: {
+        first: "moveVertical 30s ease infinite",
+        second: "moveInCircle 20s reverse infinite",
+        third: "moveInCircle 40s linear infinite",
+        fourth: "moveHorizontal 40s ease infinite",
+        fifth: "moveInCircle 20s ease infinite",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      colors: {
+        black: {
+          100: "#000319",
+          150: "#000229",
+          200: "#00083f",
+          DEFAULT: "#000",
+        },
+      },
+      keyframes: {
+        moveHorizontal: {
+          "0%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+          "50%": {
+            transform: "translateX(50%) translateY(10%)",
+          },
+          "100%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+        },
+        moveInCircle: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": {
+            transform: "rotate(180deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+        moveVertical: {
+          "0%": {
+            transform: "translateY(-50%)",
+          },
+          "50%": {
+            transform: "translateY(50%)",
+          },
+          "100%": {
+            transform: "translateY(-50%)",
+          },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+    },
   },
   plugins: [
     require("tailwindcss-motion"),
@@ -90,8 +129,8 @@ module.exports = {
         }
       );
     },
-      require("tailwindcss-animate")
-],
+    require("tailwindcss-animate"),
+  ],
 };
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPlallete(theme("colors"));

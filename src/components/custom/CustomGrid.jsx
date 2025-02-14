@@ -9,6 +9,7 @@ import {
 import gridImg from "@/assets/imggrid.webp";
 import { testimonials } from "@/data";
 import { InfiniteMovingCards } from "../ui/InfinteMoving";
+// import { GradientAnimation } from "../ui/GradientAnimation";
 
 export function CustomGrid() {
   return (
@@ -40,8 +41,9 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Constantly Evolving",
+    description:
+      "I'm always on the lookout for new tools, frameworks, and techniques.",
     header: (
       <img
         src={gridImg.src}
