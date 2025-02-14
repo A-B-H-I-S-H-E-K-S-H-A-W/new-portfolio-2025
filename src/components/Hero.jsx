@@ -7,6 +7,7 @@ import { buttonLinks } from "@/data";
 export function Hero() {
   return (
     <div className="-mt-8 min-h-screen w-full rounded-md flex items-center justify-center dark:bg-black-100 antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      {/* <ThemeToggle className="absolute top-10" /> */}
       <Spotlight
         className="-top-20 -left-5 md:left-60 md:-top-20"
         fill="purple"
@@ -36,14 +37,13 @@ export function Hero() {
             className={
               "text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
             }
-            filter=""
           />
-          <p className="mt-4 font-semibold uppercase text-sm dark:text-neutral-300 text-black-100 max-w-lg text-center mx-auto motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000">
+          <p className=" items-center flex mt-4 font-semibold uppercase text-sm dark:text-neutral-300 text-black-100 max-w-lg text-center mx-auto motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000">
             A passionate and Innovative website developer, specializing in
             dynamic applications and cuting-edge technologies
           </p>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 items-center">
             {buttonLinks.map((item) => (
               <Button
                 key={item.id}

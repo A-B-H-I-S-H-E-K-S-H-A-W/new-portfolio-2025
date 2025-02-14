@@ -8,17 +8,17 @@ import project6 from "@/assets/projects6.png"; // scale.io
 
 export const navItems = [
   {
-    name: "home",
+    name: "Home",
     link: "/",
     icon: <House size={18} />,
   },
   {
-    name: "about",
+    name: "About",
     link: "#about",
     icon: <Info size={18} />,
   },
   {
-    name: "projects",
+    name: "Projects",
     link: "#projects",
     icon: <ChartNoAxesGantt size={18} />,
   },

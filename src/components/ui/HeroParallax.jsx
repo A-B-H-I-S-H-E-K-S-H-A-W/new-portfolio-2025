@@ -114,7 +114,7 @@ export const Header = () => {
         }
         filter=""
       />
-      <p className="md:max-w-2xl px-5 mx-auto text-center text-base md:text-xl mt-8 dark:text-neutral-200">
+      <p className="md:max-w-2xl opacity-100 px-5 mx-auto text-center text-base md:text-xl mt-8 dark:text-neutral-200">
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
