@@ -6,6 +6,7 @@ import { Navbar } from "@/components/ui/Navbar";
 import { navItems } from "@/data";
 import { Projects } from "@/components/Projects";
 import { GitHub } from "@/components/GitHub";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Projects />
         <GitHub />
+        <Contact />
       </main>
     </>
   );

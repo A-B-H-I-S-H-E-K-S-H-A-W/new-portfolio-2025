@@ -10,11 +10,7 @@ const About = () => {
         <div className="flex flex-col w-full justify-start">
           <div className="flex flex-col justify-center items-center">
             {/* Content */}
-            <div className="p-20">
-              <div className="text-center">
-                <h2 className=""></h2>
-              </div>
-            </div>
+
             <CustomGrid />
           </div>
         </div>

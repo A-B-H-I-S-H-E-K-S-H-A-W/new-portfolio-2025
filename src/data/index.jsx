@@ -1,10 +1,21 @@
-import { ChartNoAxesGantt, House, Info } from "lucide-react";
+import {
+  ChartNoAxesGantt,
+  GithubIcon,
+  House,
+  Info,
+  Instagram,
+  Linkedin,
+  TwitterIcon,
+  Youtube,
+} from "lucide-react";
 import project1 from "@/assets/projects1.png"; // arca.io
 import project2 from "@/assets/projects2.png"; // freelancing
 import project3 from "@/assets/projects3.png"; // portfolio
 import project4 from "@/assets/projects4.png"; // job portal
 import project5 from "@/assets/projects5.png"; // librarian
 import project6 from "@/assets/projects6.png"; // scale.io
+
+import React from "react";
 
 export const navItems = [
   {
@@ -96,9 +107,9 @@ export const products = [
     thumbnail: project2, // freelancing
   },
   {
-    title: "Librar.an",
+    title: "Arca.ai",
     link: "https://renderwork.studio",
-    thumbnail: project5, // librarian
+    thumbnail: project1, // arca.io
   },
 
   {
@@ -107,9 +118,9 @@ export const products = [
     thumbnail: project6, // scale.io
   },
   {
-    title: "Arca.ai",
+    title: "Librari.an",
     link: "https://goldenbellsacademy.com",
-    thumbnail: project1, // arca.io
+    thumbnail: project5, // librarian
   },
   {
     title: "Job Search Website",
@@ -170,5 +181,43 @@ export const testimonialsData = [
     name: "Michael Rodriguez",
     designation: "CTO at InnovateSphere",
     srcc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
+
+export const links = [
+  {
+    title: "Twitter",
+    icon: (
+      <TwitterIcon className="h-full w-full text-purple-500 dark:text-purple-400" />
+    ),
+    href: "https://x.com/_Abhishek_Shaw",
+  },
+  {
+    title: "Instagram",
+    icon: (
+      <Instagram className="h-full w-full text-purple-500 dark:text-purple-400" />
+    ),
+    href: "https://www.instagram.com/abhishek_keshari_16/",
+  },
+  {
+    title: "Youtube",
+    icon: (
+      <Youtube className="h-full w-full text-purple-500 dark:text-purple-400" />
+    ),
+    href: "https://www.youtube.com/channel/UC9_h0ed9e44wqym-WZfN6sQ",
+  },
+  {
+    title: "LinkedIn",
+    icon: (
+      <Linkedin className="h-full w-full text-purple-500 dark:text-purple-400" />
+    ),
+    href: "https://www.linkedin.com/in/abhishek-shaw-21783a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    title: "GitHub",
+    icon: (
+      <GithubIcon className="h-full w-full text-purple-500 dark:text-purple-400" />
+    ),
+    href: "https://github.com/A-B-H-I-S-H-E-K-S-H-A-W",
   },
 ];
