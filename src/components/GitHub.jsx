@@ -3,6 +3,7 @@ import React from "react";
 import { Cover } from "./ui/Cover";
 import Image from "next/image";
 import bg from "@/assets/github-bg.jpg";
+import Button from "./ui/Button";
 
 export function GitHub() {
   return (
@@ -22,6 +23,12 @@ export function GitHub() {
 
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
         More Projects on <Cover>GitHub.</Cover>
+        <div>
+          <Button
+            title={"GitHub Repositories"}
+            href={"https://github.com/A-B-H-I-S-H-E-K-S-H-A-W?tab=repositories"}
+          />
+        </div>
       </h1>
     </div>
   );
