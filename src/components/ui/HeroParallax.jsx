@@ -108,7 +108,7 @@ export const Header = () => {
   return (
     <div className="md:max-w-7xl w-screen flex flex-col items-center text-center relative mx-auto py-20 md:py-40 px-4 left-0 top-0">
       <TextGenerateEffect
-        words={`The projects that you can rely on.`}
+        words={`The projects you can rely on.`}
         className={
           "text-3xl md:text-6xl max-w-3xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
         }

@@ -30,6 +30,7 @@ export function CustomGrid() {
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.8] bg-dot-black/[0.5] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black-100"></div>
 );
+
 const items = [
   {
     title: "The Dawn of Innovation",
@@ -52,8 +53,9 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "My Tech Stack",
+    description:
+      "Explore the powerful tools and technologies that fuel my projects.",
     header: (
       <>
         <div className="h-[12rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">

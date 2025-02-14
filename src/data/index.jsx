@@ -36,7 +36,7 @@ export const buttonLinks = [
     id: 2,
     className:
       "mt-5 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000",
-    title: "GitHub Repos",
+    title: "LinkedIn Profile",
     href: "https://github.com/A-B-H-I-S-H-E-K-S-H-A-W",
     target: "_blank",
   },
@@ -144,5 +144,31 @@ export const testimonials = [
   },
   {
     name: "Framer Motion",
+  },
+  {
+    name: "Shadcn UI",
+  },
+  {
+    name: "Bootstrap",
+  },
+  {
+    name: "MySQL",
+  },
+];
+
+export const testimonialsData = [
+  {
+    quote:
+      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+    name: "Sarah Chen",
+    designation: "Product Manager at TechFlow",
+    srcc: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    quote:
+      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+    name: "Michael Rodriguez",
+    designation: "CTO at InnovateSphere",
+    srcc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
