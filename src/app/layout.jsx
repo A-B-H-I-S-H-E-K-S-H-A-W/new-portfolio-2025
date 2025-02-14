@@ -1,9 +1,5 @@
-import { Inter } from "next/font/google";
-
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Abhishek's Portfolio",
@@ -16,7 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={""}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
