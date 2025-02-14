@@ -1,5 +1,5 @@
 import "./globals.css";
-import { ThemeProvider } from "./provider";
+import { ThemeProvider } from "@/app/Provider";
 
 export const metadata = {
   title: "Abhishek's Portfolio",
