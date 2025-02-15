@@ -7,7 +7,7 @@ import Button from "./ui/Button";
 
 export function GitHub() {
   return (
-    <div className="bg-cover bg-center md:h-[30rem] h-[20rem] relative w-full dark:bg-black-150 bg-blue-200  flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="bg-cover bg-center md:h-[30rem] h-[20rem] relative w-full dark:bg-black-100 bg-blue-200  flex flex-col items-center justify-center overflow-hidden rounded-md">
       <div
         style={{ backgroundImage: `url('../assets/github-bg.jpg')` }}
         className="w-full absolute inset-0 h-screen"

@@ -15,37 +15,34 @@ const Contact = () => {
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div className="flex flex-col w-full justify-start">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex min-h-[80vh] flex-col justify-center items-center">
               {/* Content */}
-              <div className="p-20">
+              <div className="p-10">
                 <div className="text-center">
                   <TextGenerateEffect
-                    words={`Contact Me`}
+                    words={`Ready to take your digital presence to the next level?`}
                     className={
-                      "text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
+                      "text-3xl md:max-w-3xl min-w-full md:text-5xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
                     }
                   />
-                  <p>Below are the details to reach out to me!</p>
+                  <p className="mt-3">
+                    Below are the details to reach out to me!
+                  </p>
+                  <Button className={"mt-3"} title={"Contact me now"} />
                 </div>
               </div>
-
-              <div className="flex justify-between items-center">
-                <div className="flex md:flex-row flex-col items-center gap-5 px-5">
-                  <p className="text-2xl font-bold md:mb-0 mb-1">Find me on</p>
-                  <FloatingDock
-                    mobileClassName="translate-y-20" // only for demo, remove for production
-                    items={links}
-                  />
-                </div>
+            </div>
+            <div className="px-10 py-5 flex md:flex-row flex-col items-center justify-between w-full relative z-20">
+              <div>
+                <p className="text-md font-semibold">
+                  Copyright @2025 Abhishek Shaw
+                </p>
               </div>
-
-              <div className="mt-10">
-                <div className="flex flex-col md:flex-row items-center gap-3">
-                  <h2 className="text-3xl md:text-4xl">
-                    Email me to reach out
-                  </h2>
-                  <Button title={"Click Here"} />
-                </div>
+              <div>
+                <FloatingDock
+                  mobileClassName="translate-y-20" // only for demo, remove for production
+                  items={links}
+                />
               </div>
             </div>
           </div>
