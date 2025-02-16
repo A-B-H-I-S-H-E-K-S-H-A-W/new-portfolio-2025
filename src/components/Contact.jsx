@@ -1,8 +1,8 @@
 import { links } from "@/data";
 import React from "react";
 import { FloatingDock } from "./ui/FloatingDock";
-import Button from "./ui/Button";
 import { TextGenerateEffect } from "./ui/TextGenerate";
+import { DialogBox } from "./custom/DialogBox";
 
 const Contact = () => {
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
                   <p className="mt-3">
                     Below are the details to reach out to me!
                   </p>
-                  <Button className={"mt-3"} title={"Contact me now"} />
+                  <DialogBox title={"Contact me"} />
                 </div>
               </div>
             </div>
