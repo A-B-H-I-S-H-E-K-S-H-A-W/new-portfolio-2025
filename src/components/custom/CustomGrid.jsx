@@ -9,11 +9,14 @@ import {
 import gridImg from "@/assets/imggrid.webp";
 import { testimonials } from "@/data";
 import { InfiniteMovingCards } from "../ui/InfinteMoving";
+import grid from "@/assets/grid.png";
+import gridMain from "@/assets/gridMain.png";
+import { InfiniteMovingIcons } from "../ui/InfinteMovingIcons";
 // import { GradientAnimation } from "../ui/GradientAnimation";
 
 export function CustomGrid() {
   return (
-    <BentoGrid className="max-w-7xl relative z-20 mx-auto md:auto-rows-[20rem] md:px-10 px-3">
+    <BentoGrid className="max-w-7xl relative z-20 mx-auto md:auto-rows-[23rem] md:px-10 px-2">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -34,9 +37,16 @@ const Skeleton = () => (
 
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    title: "Pushing the web game to new heights",
+    description:
+      "I thrive on solving complex challenges and turning ideas into reality.",
+    header: (
+      <img
+        src={gridMain.src}
+        className="brightness-110 w-full min-h-[8rem] object-cover relative z-20 rounded-lg"
+        alt="img"
+      />
+    ),
     className: "md:col-span-2 md:row-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
@@ -60,7 +70,7 @@ const items = [
       "Explore the powerful tools and technologies that fuel my projects.",
     header: (
       <>
-        <div className="h-[12rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="h-[16rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
@@ -78,18 +88,37 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+    title: "A Passionate Coder for All Time",
+    description: "My timeless passion for coding defines who I am",
+    header: (
+      <img
+        src={grid.src}
+        className="brightness-110 w-full min-h-[8rem] object-cover relative z-20 rounded-lg"
+        alt="img"
+      />
+    ),
     className: "md:col-span-1",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+    title: "I'm currently looking to join a cross-functional team.",
+    description: "Tools and Languages I'm currently looking for collaboration",
+    header: (
+      <>
+        <div className="h-[16rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <InfiniteMovingIcons
+            items={testimonials}
+            direction="left"
+            speed="ex-slow"
+          />
+          <InfiniteMovingIcons
+            items={testimonials}
+            direction="right"
+            speed="ex-slow"
+          />
+        </div>
+      </>
+    ),
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },

@@ -15,6 +15,21 @@ import project4 from "@/assets/projects4.png"; // job portal
 import project5 from "@/assets/projects5.png"; // librarian
 import project6 from "@/assets/projects6.png"; // scale.io
 
+import react from "@/assets/react.png";
+import redux from "@/assets/redux.png";
+import node from "@/assets/node.png";
+import express from "@/assets/express.png";
+import figma from "@/assets/figma.png";
+import js from "@/assets/js.png";
+import tailwind from "@/assets/tailwind.png";
+import nextjs from "@/assets/nextjs.png";
+import shadcn from "@/assets/shadcn.png";
+import mysql from "@/assets/mysql.webp";
+import motion from "@/assets/motion.png";
+import mongo from "@/assets/mongo.png";
+import bootstrap from "@/assets/bootstrap.png";
+import illustrator from "@/assets/illustrator.png";
+
 import React from "react";
 
 export const buttonLinks = [
@@ -119,33 +134,59 @@ export const products = [
 export const testimonials = [
   {
     name: "JavaScript",
+    img: js,
   },
   {
     name: "TailwindCSS",
+    img: tailwind,
   },
   {
     name: "React.JS",
+    img: react,
   },
   {
     name: "Next.JS",
+    img: nextjs,
   },
   {
     name: "Node.JS",
+    img: node,
   },
   {
     name: "Express.JS",
+    img: express,
   },
   {
     name: "Framer Motion",
+    img: motion,
   },
   {
     name: "Shadcn UI",
+    img: shadcn,
   },
   {
     name: "Bootstrap",
+    img: bootstrap,
   },
   {
     name: "MySQL",
+    img: mysql,
+  },
+  {
+    name: "Mongo DB",
+    img: mongo,
+  },
+  {
+    name: "Illustrator",
+    img: illustrator,
+  },
+  {
+    name: "Redux",
+    img: redux,
+  },
+  {
+    name: "Figma",
+    img: figma,
   },
 ];
 
