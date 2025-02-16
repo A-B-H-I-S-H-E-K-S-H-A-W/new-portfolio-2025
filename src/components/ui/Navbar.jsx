@@ -7,9 +7,29 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { ChartNoAxesGantt, House, Info } from "lucide-react";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 
-export const Navbar = ({ navItems, className, icon }) => {
+export const Navbar = ({ className, icon }) => {
+  const navItems = [
+    {
+      name: "Home",
+      link: "home",
+      icon: <House size={18} />,
+    },
+    {
+      name: "About",
+      link: "about",
+      icon: <Info size={18} />,
+    },
+    {
+      name: "Projects",
+      link: "projects",
+      icon: <ChartNoAxesGantt size={18} />,
+    },
+  ];
+
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
@@ -50,25 +70,29 @@ export const Navbar = ({ navItems, className, icon }) => {
           className
         )}
       >
-        {navItems.map((navItem, idx) => (
+        {navItems.map((item, idx) => (
           <Link
+            smooth={true}
+            duration={500}
             key={`link=${idx}`}
-            href={navItem.link}
+            to={item.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative cursor-pointer dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="block sm:hidden">{item.icon}</span>
+            <span className="hidden sm:block text-sm">{item.name}</span>
           </Link>
         ))}
-        <a
-          href="#contact"
-          className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+        <Link
+          smooth={true}
+          duration={500}
+          to="contact"
+          className="cursor-pointer border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
         >
           <span>Contact</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </a>
+        </Link>
       </motion.div>
     </AnimatePresence>
   );

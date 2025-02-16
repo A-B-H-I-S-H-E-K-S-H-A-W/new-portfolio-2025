@@ -17,24 +17,6 @@ import project6 from "@/assets/projects6.png"; // scale.io
 
 import React from "react";
 
-export const navItems = [
-  {
-    name: "Home",
-    link: "/",
-    icon: <House size={18} />,
-  },
-  {
-    name: "About",
-    link: "#about",
-    icon: <Info size={18} />,
-  },
-  {
-    name: "Projects",
-    link: "#projects",
-    icon: <ChartNoAxesGantt size={18} />,
-  },
-];
-
 export const buttonLinks = [
   {
     id: 1,

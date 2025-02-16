@@ -25,7 +25,7 @@ export function Hero() {
         fill="blue"
       />
 
-      <div
+      <section
         id="home"
         className="min-h-screen w-full dark:bg-black-100 bg-blue-100  dark:bg-grid-white/[0.1] bg-grid-black/[0.23] relative flex items-center justify-center"
       >
@@ -55,7 +55,7 @@ export function Hero() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Content */}
     </div>
