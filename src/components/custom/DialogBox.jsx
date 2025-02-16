@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export function DialogBox({ title }) {
+export function DialogBox({ title, DialogName, DialogDetails }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -22,10 +22,8 @@ export function DialogBox({ title }) {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Contact Me</DialogTitle>
-          <DialogDescription>
-            Email me to contact or collaborate.
-          </DialogDescription>
+          <DialogTitle>{DialogName}</DialogTitle>
+          <DialogDescription>{DialogDetails}</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-3">
           <div className="grid grid-cols-7 items-center gap-4">
