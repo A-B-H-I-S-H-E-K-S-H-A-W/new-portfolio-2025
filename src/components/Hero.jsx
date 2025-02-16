@@ -3,6 +3,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Button from "./ui/Button";
 import { buttonLinks } from "@/data";
+import { DialogBox } from "./custom/DialogBox";
 
 export function Hero() {
   return (
@@ -44,15 +45,25 @@ export function Hero() {
           </p>
 
           <div className="flex gap-5 items-center">
-            {buttonLinks.map((item) => (
-              <Button
-                key={item.id}
-                href={item.href}
-                title={item.title}
-                className={item.className}
-                target={item?.target}
-              />
-            ))}
+            <DialogBox
+              className={
+                "mt-5 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000"
+              }
+              title={"Download CV"}
+              DialogName={"Download CV"}
+              DialogDetails={"Enter your email address to download my cv"}
+            />
+            <Button
+              key={"2"}
+              href={
+                "https://www.linkedin.com/in/abhishek-shaw-21783a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              }
+              title={"LinkedIn Profile"}
+              className={
+                "mt-5 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000"
+              }
+              target={"_blank"}
+            />
           </div>
         </div>
       </section>

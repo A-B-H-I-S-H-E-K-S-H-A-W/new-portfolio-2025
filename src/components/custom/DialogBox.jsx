@@ -12,12 +12,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export function DialogBox({ title, DialogName, DialogDetails }) {
+export function DialogBox({ title, DialogName, DialogDetails, className }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <p>
-          <Button className={"mt-3"} title={title} />
+          <Button className={className} title={title} />
         </p>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
