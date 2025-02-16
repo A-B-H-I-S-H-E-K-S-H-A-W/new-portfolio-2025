@@ -29,6 +29,7 @@ const Contact = () => {
                     Below are the details to reach out to me!
                   </p>
                   <DialogBox
+                    className={"mt-3"}
                     title={"Contact me"}
                     DialogName={"Contact Me"}
                     DialogDetails={"Email me to contact or collaborate."}
