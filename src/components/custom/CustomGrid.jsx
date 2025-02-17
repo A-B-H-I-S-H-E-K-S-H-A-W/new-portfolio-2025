@@ -24,7 +24,6 @@ export function CustomGrid() {
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={item.icon}
         />
       ))}
     </BentoGrid>
@@ -48,7 +47,6 @@ const items = [
       />
     ),
     className: "md:col-span-2 md:row-span-2",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Constantly Evolving",
@@ -62,7 +60,6 @@ const items = [
       />
     ),
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "My Tech Stack",
@@ -85,7 +82,6 @@ const items = [
       </>
     ),
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "A Passionate Coder for All Time",
@@ -98,7 +94,6 @@ const items = [
       />
     ),
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "I'm currently looking to join a cross-functional team.",
@@ -120,6 +115,5 @@ const items = [
       </>
     ),
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 ];

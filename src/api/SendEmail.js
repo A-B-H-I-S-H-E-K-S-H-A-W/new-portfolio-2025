@@ -1,31 +1,36 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-  if (req.method === "POST") {
-    const { email } = req.body;
+  const { email } = req.body;
 
-    const transporter = nodemailer.createTransport({
+  if (!email) {
+    return res.status(400).json({ error: "Email is required" });
+  }
+
+  try {
+    // Use Nodemailer to send the email
+    let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "your-email@gmail.com",
-        pass: "your-email-password",
+        user: "eztodebug@gmail.com",
+        pass: "abhishek@2002",
       },
     });
 
-    const mailOptions = {
-      from: "your-email@gmail.com",
-      to: "your-email@example.com",
-      subject: "New Email Subscription",
-      text: `A user has requested to download your CV. Their email address is: ${email}`,
+    let mailOptions = {
+      from: email,
+      to: "eztodebug@gmail.com",
+      subject: "CV Download Request",
+      text: `I hope this message finds you well. I am writing to express my interest in obtaining a copy of the CV. Please find my email address below for your reference: <br/>
+              Email: ${email} <br/>
+              Thank you for your time and consideration. <br/>
+              Best regards`,
     };
 
-    try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).json({ message: "Email sent successfully" });
-    } catch (error) {
-      res.status(500).json({ message: "Error sending email", error });
-    }
-  } else {
-    res.status(405).json({ message: "Method not allowed" });
+    await transporter.sendMail(mailOptions);
+
+    return res.status(200).json({ message: "Email sent successfully!" });
+  } catch (error) {
+    return res.status(500).json({ error: "Error sending email" });
   }
 };

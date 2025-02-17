@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "@/components/ui/Button";
 import {
   Dialog,
   DialogClose,
@@ -15,10 +14,22 @@ import { Label } from "@/components/ui/label";
 
 export function DialogBox({ title, DialogName, DialogDetails, className }) {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = () => {
-    console.log("Email submitted:", email);
-    // You can send the email data to your backend here
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("../../api/SendEmail", {
+      method: "POST",
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      setMessage(data.message);
+    } else {
+      setMessage(data.error);
+    }
   };
 
   return (
@@ -26,7 +37,6 @@ export function DialogBox({ title, DialogName, DialogDetails, className }) {
       {/* Ensure the DialogTrigger wraps only a single element */}
       <DialogTrigger asChild>
         <button
-          onClick={handleSubmit}
           className={`relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] ${className} `}
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
