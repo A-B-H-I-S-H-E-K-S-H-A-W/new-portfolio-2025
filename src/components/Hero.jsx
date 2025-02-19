@@ -2,7 +2,6 @@ import React from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Button from "./ui/Button";
-import { buttonLinks } from "@/data";
 import { DialogBox } from "./custom/DialogBox";
 
 export function Hero() {

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Cover } from "./ui/Cover";
-import Image from "next/image";
 import bg from "@/assets/github-bg.jpg";
 import Button from "./ui/Button";
 

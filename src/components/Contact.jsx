@@ -1,10 +1,11 @@
 import { links } from "@/data";
-import React from "react";
+import React, { useState } from "react";
 import { FloatingDock } from "./ui/FloatingDock";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { DialogBox } from "./custom/DialogBox";
 
 const Contact = () => {
+  const [contactData, setContactData] = useState("contact");
   return (
     <>
       <section
@@ -29,6 +30,7 @@ const Contact = () => {
                     Below are the details to reach out to me!
                   </p>
                   <DialogBox
+                    contact={contactData}
                     className={"mt-3"}
                     title={"Contact me"}
                     DialogName={"Contact Me"}
