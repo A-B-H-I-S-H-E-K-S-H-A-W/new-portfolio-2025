@@ -17,37 +17,39 @@ export default async function handler(req, res) {
     });
 
     const downloadCvObject = {
-      to: process.env.GMAIL_USER,
-      from: userEmail,
+      from: process.env.GMAIL_USER,
+      to: userEmail,
       subject: "Request for CV",
-      text: `Dear Abhishek Shaw,
+      text: `Dear ${userEmail},
 
-      I hope this message finds you well.
+      Thank you for contacting me. I appreciate your interest in learning more about my background and experiences. I wanted to let you know that I have received your request and will be sending my CV to you shortly.
 
-      I am very interested in learning more about your background and experiences, and I would greatly appreciate it if you could share your CV with me. Your expertise and achievements are of great interest to me, and I believe your CV would provide valuable insights.
+      Your interest in my expertise and achievements is truly valued, and I believe my CV will provide valuable insights for you.
 
-      Thank you for your time and consideration.
+      Thank you for your time and consideration. If you have any further questions or require additional information, please do not hesitate to reach out.
 
       Best regards,
 
-      ${userEmail}`,
+      Abhishek Shaw`,
     };
 
     const contactMeObject = {
-      to: process.env.GMAIL_USER,
-      from: userEmail,
+      from: process.env.GMAIL_USER,
+      to: userEmail,
       subject: "Collaboration Request",
-      text: `Dear Abhishek Shaw,
+      text: `Dear ${userEmail},
 
       I hope this message finds you well.
 
-      I am reaching out to express my interest in collaborating with you on potential projects. Your background and expertise are impressive, and I believe that working together could lead to exciting and valuable outcomes. Please let me know if you are open to discussing collaboration opportunities.
+      Thank you for reaching out and expressing your interest in collaborating with me. I am excited about the opportunity to work together and explore potential projects. Your enthusiasm and vision for collaboration are truly appreciated, and I believe that our combined expertise can lead to remarkable outcomes.
 
-      Thank you for your time and consideration.
+      I look forward to discussing how we can bring our ideas to life and achieve our shared goals. Please let me know your availability for a meeting or any further details you would like to discuss.
+
+      Thank you once again for considering this collaboration. I am eager to start this journey with you.
 
       Best regards,
 
-      ${userEmail}`,
+      Abhishek Shaw`,
     };
 
     try {
