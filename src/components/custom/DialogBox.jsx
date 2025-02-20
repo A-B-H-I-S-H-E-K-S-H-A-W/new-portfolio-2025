@@ -94,7 +94,7 @@ export function DialogBox({
         </button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] max-w-[360px]">
         <DialogHeader>
           <DialogTitle>{DialogName}</DialogTitle>
           <DialogDescription>{DialogDetails}</DialogDescription>
