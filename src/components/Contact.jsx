@@ -3,9 +3,21 @@ import React, { useState } from "react";
 import { FloatingDock } from "./ui/FloatingDock";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { DialogBox } from "./custom/DialogBox";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [contactData, setContactData] = useState("contact");
+
+  const [toastMsg, setToastMsg] = useState(null);
+
+  const handleToast = ({ title, description }) => {
+    setToastMsg({ title, description });
+    console.log(toastMsg);
+
+    toast(title, {
+      description: description,
+    });
+  };
   return (
     <>
       <section
@@ -30,6 +42,7 @@ const Contact = () => {
                     Below are the details to reach out to me!
                   </p>
                   <DialogBox
+                    toast={handleToast}
                     contact={contactData}
                     className={"mt-3"}
                     title={"Contact me"}

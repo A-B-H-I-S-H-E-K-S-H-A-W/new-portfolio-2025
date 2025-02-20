@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import "./globals.css";
 import { ThemeProvider } from "@/app/Provider";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         >
           {children}
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

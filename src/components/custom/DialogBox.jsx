@@ -18,18 +18,30 @@ export function DialogBox({
   DialogDetails,
   className,
   contact,
+  toast,
 }) {
   const [email, setEmail] = useState("");
   const [resumeMessage, setResumeMessage] = useState("");
   const [message, setMessage] = useState("");
+  const [emailError, setEmailError] = useState("");
 
   useEffect(() => {
     setResumeMessage(contact);
   }, [contact]);
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email);
+
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
+    setEmailError("");
 
     try {
       const response = await fetch("/api/send-email", {
@@ -46,12 +58,21 @@ export function DialogBox({
       if (response.ok) {
         const result = JSON.parse(text);
         setMessage(result.message);
+        toast({
+          title: "Success",
+          description: "Email sent successfully!",
+        });
       } else {
         setMessage("Error: " + text);
+        toast({
+          title: "Error",
+          description: text,
+        });
       }
     } catch (error) {
       console.error("Error:", error);
       setMessage("Failed to send email.");
+      toast({ title: "Error", description: "Failed to send Message" });
     }
   };
 
@@ -87,6 +108,9 @@ export function DialogBox({
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            {emailError && (
+              <p className="text-red-500 col-span-7">{emailError}</p>
+            )}
             <Input
               type="hidden"
               id="resumeMessage"

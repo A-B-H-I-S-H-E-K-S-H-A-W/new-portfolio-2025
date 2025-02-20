@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Button from "./ui/Button";
 import { DialogBox } from "./custom/DialogBox";
+import { Toaster } from "./ui/sonner";
+import { toast } from "sonner";
 
 export function Hero() {
+  const [toastMsg, setToastMsg] = useState(null);
+
+  const handleToast = ({ title, description }) => {
+    setToastMsg({ title, description });
+    console.log(toastMsg);
+
+    toast(title, {
+      description: description,
+    });
+  };
   return (
     <div className="-mt-8 min-h-screen w-full rounded-md flex items-center justify-center dark:bg-black-100 antialiased bg-grid-white/[0.02] relative overflow-hidden">
       {/* <ThemeToggle className="absolute top-10" /> */}
@@ -51,6 +63,7 @@ export function Hero() {
               title={"Download CV"}
               DialogName={"Download CV"}
               DialogDetails={"Enter your email address to download my cv"}
+              toast={handleToast}
             />
             <Button
               key={"2"}
@@ -66,7 +79,10 @@ export function Hero() {
           </div>
         </div>
       </section>
-
+      <div>
+        {/* Toast */}
+        <Toaster />
+      </div>
       {/* Content */}
     </div>
   );
