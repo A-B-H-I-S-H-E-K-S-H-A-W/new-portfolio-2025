@@ -35,80 +35,80 @@ import React from "react";
 export const products = [
   {
     title: "Arca.io",
-    link: "",
+
     thumbnail: project1, // arca.io
   },
   {
     title: "Job Portal",
-    link: "https://cursor.so",
+
     thumbnail: project4, // job portal
   },
   {
     title: "Freelancing Platform",
-    link: "https://userogue.com",
+
     thumbnail: project2, // freelancing
   },
 
   {
     title: "Scale.io",
-    link: "https://editorially.org",
+
     thumbnail: project6, // scale.io
   },
   {
     title: "Freelancing",
-    link: "https://editrix.ai",
+
     thumbnail: project2, // freelancing
   },
   {
     title: "Portfolio website",
-    link: "https://app.pixelperfect.quest",
+
     thumbnail: project3, // portfolio
   },
 
   {
     title: "Librarian",
-    link: "https://algochurn.com",
+
     thumbnail: project5, // librarian
   },
   {
     title: "Arca",
-    link: "https://ui.aceternity.com",
+
     thumbnail: project1, // arca.io
   },
   {
     title: "Portfolio Website",
-    link: "https://tailwindmasterkit.com",
+
     thumbnail: project3, // portfolio
   },
   {
     title: "Freelancing",
-    link: "https://smartbridgetech.com",
+
     thumbnail: project2, // freelancing
   },
   {
     title: "Arca.ai",
-    link: "https://renderwork.studio",
+
     thumbnail: project1, // arca.io
   },
 
   {
     title: "Scale",
-    link: "https://cremedigital.com",
+
     thumbnail: project6, // scale.io
   },
   {
     title: "Librari.an",
-    link: "https://goldenbellsacademy.com",
+
     thumbnail: project5, // librarian
   },
   {
     title: "Job Search Website",
-    link: "https://invoker.lol",
+
     thumbnail: project4, // job portal
   },
   {
     title: "Self-Portfolio Website",
-    link: "https://efreeinvoice.com",
+
     thumbnail: project3, // portfolio
   },
 ];
