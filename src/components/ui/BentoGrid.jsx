@@ -13,12 +13,7 @@ export const BentoGrid = ({ className, children }) => {
   );
 };
 
-export const BentoGridItem = ({
-  className,
-  title,
-  description,
-  header,
-}) => {
+export const BentoGridItem = ({ className, title, description, header }) => {
   return (
     <div
       className={cn(
