@@ -17,8 +17,8 @@ export default async function handler(req, res) {
     });
 
     const downloadCvObject = {
-      to: userEmail,
-      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER,
+      from: userEmail,
       subject: "Request for CV",
       text: `Dear Abhishek Shaw,
 
@@ -34,8 +34,8 @@ export default async function handler(req, res) {
     };
 
     const contactMeObject = {
-      to: userEmail,
-      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER,
+      from: userEmail,
       subject: "Collaboration Request",
       text: `Dear Abhishek Shaw,
 
