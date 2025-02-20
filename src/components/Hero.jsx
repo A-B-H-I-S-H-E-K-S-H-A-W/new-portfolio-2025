@@ -33,9 +33,9 @@ export function Hero() {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex items-center justify-center max-w-5xl flex-col p-4 mx-auto relative z-10  w-full pt-20 md:pt-0">
           <TextGenerateEffect
-            words={`Hello I'm Abhishek Shaw, A Full Stack Developer`}
+            words={`Hello 👋 I'm Abhishek Shaw, A Full Stack Developer`}
             className={
-              "text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
+              "text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-opacity-50"
             }
           />
           <p className=" items-center flex mt-4 font-semibold uppercase text-sm dark:text-neutral-300 text-black-100 max-w-lg text-center mx-auto motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-delay-2000">
