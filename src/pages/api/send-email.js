@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       from: process.env.GMAIL_USER,
       to: userEmail,
       subject: "Request for CV",
-      text: `Dear ${userEmail},
+      text: `Greetings,
 
 Thank you for contacting me. I appreciate your interest in learning more about my background and experiences. I wanted to let you know that I have received your request and will be sending my CV to you shortly.
 
@@ -37,7 +37,7 @@ Abhishek Shaw`,
       from: process.env.GMAIL_USER,
       to: userEmail,
       subject: "Collaboration Request",
-      text: `Dear Abhishek Shaw,
+      text: `Greetings,
 
 I hope this message finds you well.
 
@@ -47,7 +47,7 @@ I look forward to discussing how we can bring our ideas to life and achieve our 
 
 Best regards,
 
-${userEmail}`,
+Abhishek Shaw`,
     };
 
     try {
