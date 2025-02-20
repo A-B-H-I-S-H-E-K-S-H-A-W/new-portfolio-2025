@@ -22,34 +22,32 @@ export default async function handler(req, res) {
       subject: "Request for CV",
       text: `Dear ${userEmail},
 
-      Thank you for contacting me. I appreciate your interest in learning more about my background and experiences. I wanted to let you know that I have received your request and will be sending my CV to you shortly.
+Thank you for contacting me. I appreciate your interest in learning more about my background and experiences. I wanted to let you know that I have received your request and will be sending my CV to you shortly.
 
-      Your interest in my expertise and achievements is truly valued, and I believe my CV will provide valuable insights for you.
+Your interest in my expertise and achievements is truly valued, and I believe my CV will provide valuable insights for you.
 
-      Thank you for your time and consideration. If you have any further questions or require additional information, please do not hesitate to reach out.
+Thank you for your time and consideration. If you have any further questions or require additional information, please do not hesitate to reach out.
 
-      Best regards,
+Best regards,
 
-      Abhishek Shaw`,
+Abhishek Shaw`,
     };
 
     const contactMeObject = {
       from: process.env.GMAIL_USER,
       to: userEmail,
       subject: "Collaboration Request",
-      text: `Dear ${userEmail},
+      text: `Dear Abhishek Shaw,
 
-      I hope this message finds you well.
+I hope this message finds you well.
 
-      Thank you for reaching out and expressing your interest in collaborating with me. I am excited about the opportunity to work together and explore potential projects. Your enthusiasm and vision for collaboration are truly appreciated, and I believe that our combined expertise can lead to remarkable outcomes.
+Thank you for reaching out and expressing your interest in collaborating with me. I am excited about the opportunity to work together and explore potential projects. Your enthusiasm and vision for collaboration are truly appreciated, and I believe that our combined expertise can lead to remarkable outcomes.
 
-      I look forward to discussing how we can bring our ideas to life and achieve our shared goals. Please let me know your availability for a meeting or any further details you would like to discuss.
+I look forward to discussing how we can bring our ideas to life and achieve our shared goals. Please let me know your availability for a meeting or any further details you would like to discuss.
 
-      Thank you once again for considering this collaboration. I am eager to start this journey with you.
+Best regards,
 
-      Best regards,
-
-      Abhishek Shaw`,
+${userEmail}`,
     };
 
     try {
