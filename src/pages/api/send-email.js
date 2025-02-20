@@ -19,20 +19,40 @@ export default async function handler(req, res) {
     const downloadCvObject = {
       to: userEmail,
       from: process.env.GMAIL_USER,
-      subject: "Hello from Download CV",
-      text: `User email: ${userEmail}`,
+      subject: "Request for CV",
+      text: `Dear Abhishek Shaw,
+
+      I hope this message finds you well.
+
+      I am very interested in learning more about your background and experiences, and I would greatly appreciate it if you could share your CV with me. Your expertise and achievements are of great interest to me, and I believe your CV would provide valuable insights.
+
+      Thank you for your time and consideration.
+
+      Best regards,
+
+      ${userEmail}`,
     };
 
-    const ContactMe = {
+    const contactMeObject = {
       to: userEmail,
       from: process.env.GMAIL_USER,
-      subject: "Hello from Conatct",
-      text: `User email: ${userEmail}`,
+      subject: "Collaboration Request",
+      text: `Dear Abhishek Shaw,
+
+      I hope this message finds you well.
+
+      I am reaching out to express my interest in collaborating with you on potential projects. Your background and expertise are impressive, and I believe that working together could lead to exciting and valuable outcomes. Please let me know if you are open to discussing collaboration opportunities.
+
+      Thank you for your time and consideration.
+
+      Best regards,
+
+      ${userEmail}`,
     };
 
     try {
       const info = await transporter.sendMail(
-        resume === undefined ? downloadCvObject : ContactMe
+        resume === undefined ? downloadCvObject : contactMeObject
       );
       console.log("Email sent: " + info.response);
       res.status(200).json({ message: "Email sent successfully!" });

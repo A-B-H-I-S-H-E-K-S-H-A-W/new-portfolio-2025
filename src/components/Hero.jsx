@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Button from "./ui/Button";
@@ -7,12 +7,7 @@ import { Toaster } from "./ui/sonner";
 import { toast } from "sonner";
 
 export function Hero() {
-  const [toastMsg, setToastMsg] = useState(null);
-
   const handleToast = ({ title, description }) => {
-    setToastMsg({ title, description });
-    console.log(toastMsg);
-
     toast(title, {
       description: description,
     });
