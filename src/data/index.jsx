@@ -152,7 +152,7 @@ export const testimonials = [
     img: mysql,
   },
   {
-    name: "Mongo DB",
+    name: "MongoDB",
     img: mongo,
   },
   {

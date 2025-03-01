@@ -32,7 +32,7 @@ export function CustomGrid() {
 
 const items = [
   {
-    title: "Pushing the Web Development Forward",
+    title: "Pushing Web Development Forward",
     description:
       "I thrive on solving complex challenges and turning ideas into reality.",
     header: (
