@@ -9,6 +9,7 @@ export const metadata = {
     "full stack developer, web development portfolio, Abhishek Shaw, front-end, back-end, web, website, contact, nextjs, website making, portfolio website, modern website, web animations",
   description:
     "Explore the diverse portfolio of Abhishek Shaw, a skilled full stack web developer. Discover his creative and user-friendly solutions across front-end and back-end technologies.",
+  robots: "noindex",
 };
 
 export default function RootLayout({ children }) {
