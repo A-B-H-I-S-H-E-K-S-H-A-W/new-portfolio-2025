@@ -4,9 +4,9 @@ import { ThemeProvider } from "@/app/Provider";
 import icon from "@/jsm-logo.png";
 
 export const metadata = {
-  title: "Abhishek's Portfolio - Skilled Full Stack Developer",
+  title: "Abhishek Shaw - Full Stack Web Developer Portfolio",
   description:
-    "Discover Abhishek Shaw's diverse portfolio of web development projects, showcasing his expertise in front-end and back-end technologies. Explore his creative and user-friendly solutions.",
+    "Explore the diverse portfolio of Abhishek Shaw, a skilled full stack web developer. Discover his creative and user-friendly solutions across front-end and back-end technologies.",
 };
 
 export default function RootLayout({ children }) {
