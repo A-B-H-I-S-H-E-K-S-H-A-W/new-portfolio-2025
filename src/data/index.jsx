@@ -1,8 +1,5 @@
 import {
-  ChartNoAxesGantt,
   GithubIcon,
-  House,
-  Info,
   Instagram,
   Linkedin,
   TwitterIcon,
@@ -34,23 +31,23 @@ import React from "react";
 
 export const products = [
   {
-    title: "Arca.io",
+    title: "Arca.io - Decentralized Marketplace",
 
     thumbnail: project1, // arca.io
   },
   {
-    title: "Job Portal",
+    title: "Job Portal - Online Job Search Platform",
 
     thumbnail: project4, // job portal
   },
   {
-    title: "Freelancing Platform",
+    title: "Freelancing Platform - Connect Clients with Freelancers",
 
     thumbnail: project2, // freelancing
   },
 
   {
-    title: "Scale.io",
+    title: "Scale.io - Business Growth Solutions",
 
     thumbnail: project6, // scale.io
   },
@@ -60,7 +57,7 @@ export const products = [
     thumbnail: project2, // freelancing
   },
   {
-    title: "Portfolio website",
+    title: "Portfolio Website - Showcasing Web Development Expertise",
 
     thumbnail: project3, // portfolio
   },
@@ -71,7 +68,7 @@ export const products = [
     thumbnail: project5, // librarian
   },
   {
-    title: "Arca",
+    title: "Arca - Blockchain-based Platform",
 
     thumbnail: project1, // arca.io
   },
@@ -92,22 +89,22 @@ export const products = [
   },
 
   {
-    title: "Scale",
+    title: "Scale - Business Growth and Consulting",
 
     thumbnail: project6, // scale.io
   },
   {
-    title: "Librari.an",
+    title: "Librari.an - Digital Library Management",
 
     thumbnail: project5, // librarian
   },
   {
-    title: "Job Search Website",
+    title: "Job Search Website - Connecting Employers and Candidates",
 
     thumbnail: project4, // job portal
   },
   {
-    title: "Self-Portfolio Website",
+    title: "Self-Portfolio Website - Displaying Web Development Skills",
 
     thumbnail: project3, // portfolio
   },
