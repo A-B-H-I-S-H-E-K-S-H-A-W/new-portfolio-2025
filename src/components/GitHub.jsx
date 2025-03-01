@@ -20,7 +20,7 @@ export function GitHub() {
         />
       </div>
 
-      <h1 className="md:text-7xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20">
+      <h2 className="md:text-7xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20">
         More Projects on <Cover>GitHub.</Cover>
         <div className="mt-6">
           <Button
@@ -28,7 +28,7 @@ export function GitHub() {
             href={"https://github.com/A-B-H-I-S-H-E-K-S-H-A-W?tab=repositories"}
           />
         </div>
-      </h1>
+      </h2>
     </div>
   );
 }

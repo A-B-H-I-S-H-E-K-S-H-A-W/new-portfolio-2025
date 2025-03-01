@@ -89,9 +89,9 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <h2 className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              <h3 className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
                 {item.name}
-              </h2>
+              </h3>
             </blockquote>
           </li>
         ))}

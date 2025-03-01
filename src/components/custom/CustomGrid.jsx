@@ -32,7 +32,7 @@ export function CustomGrid() {
 
 const items = [
   {
-    title: "Pushing the web game to new heights",
+    title: "Pushing the Web Development Forward",
     description:
       "I thrive on solving complex challenges and turning ideas into reality.",
     header: (
@@ -45,7 +45,7 @@ const items = [
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    title: "Constantly Evolving",
+    title: "Constantly Evolving Expertise",
     description:
       "I'm always on the lookout for new tools, frameworks, and techniques.",
     header: (
