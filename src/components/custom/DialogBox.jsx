@@ -41,14 +41,14 @@ export function DialogBox({
       setEmailError("Please enter a valid email address.");
       return;
     }
-    toast({
-      title: "Sending...",
-      description: "Sending your email.",
-    });
 
     setEmailError("");
 
     try {
+      toast({
+        title: "Sending...",
+        description: "Sending your email.",
+      });
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
