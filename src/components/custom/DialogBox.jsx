@@ -37,15 +37,15 @@ export function DialogBox({
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
     toast({
       title: "Sending...",
       description: "Sending your email.",
     });
 
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address.");
-      return;
-    }
     setEmailError("");
 
     try {
