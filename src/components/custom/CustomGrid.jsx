@@ -80,7 +80,7 @@ const items = [
     className: "md:col-span-1",
   },
   {
-    title: "A Passionate Coder for All Time",
+    title: "A Passionate Coder for all Time",
     description: "My timeless passion for coding defines who I am",
     header: (
       <img
